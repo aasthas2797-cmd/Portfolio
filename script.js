@@ -14,7 +14,7 @@
   }
   if (document.getElementById('focus') && 'IntersectionObserver' in window) {
     const observer=new IntersectionObserver(entries => { entries.forEach(entry=>{if(entry.isIntersecting){ document.querySelectorAll('.nav-links a[data-section]').forEach(a=>a.classList.toggle('active',a.dataset.section===entry.target.id));}}) }, {rootMargin:'-23% 0px -58% 0px',threshold:0});
-    ['focus','projects','data','experience','about'].forEach(id=>{const s=document.getElementById(id);if(s)observer.observe(s)});
+    ['focus','projects','data','experience','about','contact'].forEach(id=>{const s=document.getElementById(id);if(s)observer.observe(s)});
   }
   document.querySelectorAll('[data-flip]').forEach(card=>{
     const flip=()=>{const active=card.classList.toggle('is-flipped');card.setAttribute('aria-pressed',String(active))};
