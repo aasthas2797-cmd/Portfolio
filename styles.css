@@ -1373,3 +1373,122 @@ button {cursor:pointer; font:inherit;}
 .footer-back-to-top{display:inline-flex;align-items:center;gap:10px}
 .footer-back-to-top span{font-size:17px;line-height:1}
 @media(max-width:767px){#contact{margin:0 12px 24px;border-radius:26px;padding:65px 27px 75px;scroll-margin-top:80px}.contact-eyebrow{margin-bottom:22px}.contact-heading{font-size:clamp(36px,9.7vw,50px);letter-spacing:-.7px}.contact-links{gap:30px}.contact-links a{font-size:14px}}
+
+
+/* V6: approved editorial content refinements, original Version 3 palette preserved. */
+/* Sustainability-inspired hero background art, drawn around—not across—the text. */
+.hero-environmental-art {
+ position:absolute;inset:0;pointer-events:none;z-index:0;
+ background-image:url('assets/hero-circular-contours.svg');
+ background-repeat:no-repeat;background-position:center center;background-size:cover;
+ opacity:.90;
+}
+.hero-fixed > div[data-aos] {position:relative;z-index:2;}
+@media(max-width:767px){
+ .hero-environmental-art {opacity:.52;background-size:auto 100%;background-position:53% center;}
+}
+/* Original desktop flip-card proportions (440px), with tighter inner typesetting
+   to accommodate the complete, approved back-of-card writing. */
+#focus .grid {align-items:stretch}
+#focus .flip-card {min-height:440px}
+#focus .flip-card-front {padding:30px}
+#focus .flip-card-back {padding:27px 29px;justify-content:center;overflow:hidden}
+#focus .flip-card h3{font-size:21px;line-height:1.24;margin-bottom:12px}
+#focus .flip-hook{font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,1.75vw,24px);line-height:1.26;letter-spacing:-.35px;color:#1f4a37;margin:0 0 13px;font-weight:400}
+#focus .flip-card-front > p{font-size:13.5px;line-height:1.57;max-width:375px;margin-bottom:20px}
+#focus .focus-cta{font-size:10px;letter-spacing:.13em;color:#2f6a4f}
+#focus .focus-icon-tile{background:#e3ece6}
+#focus .focus-icon{color:#2f6a4f}
+/* Exact individual Version 3 focus-card accent colours. */
+#focus .flip-card:nth-child(2) .focus-icon-tile{background:#fbefdc}
+#focus .flip-card:nth-child(2) .focus-icon,
+#focus .flip-card:nth-child(2) .focus-cta{color:#a8681c}
+#focus .flip-card:nth-child(3) .focus-icon-tile{background:#e5e8f6}
+#focus .flip-card:nth-child(3) .focus-icon,
+#focus .flip-card:nth-child(3) .focus-cta{color:#3e4f99}
+#focus .flip-back-copy{max-width:460px;width:100%;margin:auto 0}
+#focus .flip-back-copy p{font-size:13.5px;line-height:1.44;color:#ffffff;font-weight:400;margin:0 0 11px}
+#focus .flip-back-copy p:last-child{margin-bottom:0}
+@media(max-width:1023px){
+ #focus .flip-card{min-height:440px}
+ #focus .flip-card-back{padding:27px 31px}
+ #focus .flip-back-copy p{font-size:14px;line-height:1.53}
+}
+@media(max-width:767px){
+ #focus .flip-card{min-height:440px}
+ #focus .flip-card-front{padding:27px}
+ #focus .flip-card-back{padding:24px 25px}
+ #focus .flip-back-copy p{font-size:13px;line-height:1.44;margin-bottom:9px}
+ #focus .flip-hook{font-size:23px}
+}
+@media(max-width:375px){
+ #focus .flip-card{min-height:490px}
+ #focus .flip-card-back{padding:21px 22px}
+ #focus .flip-back-copy p{font-size:12.8px;line-height:1.44;margin-bottom:9px}
+}
+/* About remains professional while the letter is a separate, optional story. */
+#about h2 em {color:#2f6a4f;font-style:italic}
+#about .about-copy{max-width:790px}
+#about .about-close {font-weight:500;color:#1f4a37;border-color:#dce5de}
+.about-story-invite{padding-top:2px}
+.about-story-teaser{font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.55;color:#2f6a4f;margin-bottom:16px!important}
+.story-trigger{display:inline-flex;align-items:center;gap:16px;padding:13px 0;border:0;border-bottom:1px solid #a7bba9;background:transparent;color:#1f4a37;font-weight:600;font-size:13.5px;letter-spacing:.025em;transition:color .2s,gap .25s}
+.story-trigger:hover,.story-trigger:focus-visible{color:#2f6a4f;gap:23px}
+.story-trigger span{font-size:19px;font-weight:400;line-height:1}
+/* Quiet, uncluttered 'My Story' letter with the same original cream/deep-green palette. */
+body.story-modal-open{overflow:hidden}
+.story-dialog{
+ position:fixed;inset:0;margin:auto;width:min(1110px,91vw);max-width:none;
+ height:min(850px,90dvh);max-height:90dvh;border:1px solid #dce5de;
+ border-radius:20px;background:#f8f6f1;color:#1f4a37;overflow:hidden;
+ padding:0;box-shadow:0 28px 95px rgba(12,17,13,.26);
+}
+.story-dialog::backdrop{background:rgba(20,28,22,.68);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.story-dialog[open]{animation:storyUnfold .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes storyUnfold{from{opacity:0;transform:translateY(24px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
+.story-modal-frame{display:flex;flex-direction:column;height:100%;min-height:0;padding:0}
+.story-modal-topbar{display:flex;align-items:center;justify-content:flex-end;gap:16px;flex:none;padding:11px 26px;background:#1f4a37;color:#fff}
+.story-close{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.44);border-radius:999px;padding:6px 15px;font-family:'Inter',Arial,sans-serif;font-size:12px;color:white;background:transparent;transition:background .2s}
+.story-close:hover,.story-close:focus-visible{background:#2f6a4f}
+.story-paper{flex:1;min-height:0;overflow-y:hidden;background:#f8f6f1;padding:clamp(19px,3vh,36px) clamp(35px,7vw,110px) clamp(16px,2.7vh,28px);display:flex;flex-direction:column;justify-content:center}
+.story-letter-title{font-family:'EB Garamond',Georgia,serif;font-weight:500;font-style:normal;font-size:clamp(41px,4vw,55px);line-height:1;letter-spacing:-.02em;color:#1f4a37;margin:0}
+.story-gold-rule{width:100%;height:1px;background:linear-gradient(to right,rgba(31,74,55,.48),rgba(31,74,55,.08));margin:11px 0 14px}
+.story-letter-body{font-family:'EB Garamond',Georgia,serif;color:#253a2e;max-width:870px;width:100%;margin:0 auto;font-size:clamp(18px,1.45vw,20px);line-height:1.37}
+.story-letter-body p{margin:0 0 14px}
+.story-letter-body .story-quote{font-style:italic;color:#2f6a4f;font-size:1.035em;line-height:1.3}
+.story-letter-body .story-final-line{color:#1f4a37;font-weight:600}
+.story-letter-body .story-signature{font-style:italic;color:#2f6a4f;font-size:27px;margin:13px 0 0}
+@media(min-width:768px) and (max-height:750px){
+ .story-dialog{height:94dvh;max-height:94dvh}
+ .story-paper{padding-top:12px;padding-bottom:10px}
+ .story-letter-title{font-size:37px}
+ .story-gold-rule{margin:7px 0 8px}
+ .story-letter-body{font-size:17.4px;line-height:1.25}
+ .story-letter-body p{margin-bottom:8px}
+ .story-letter-body .story-signature{font-size:23px;margin-top:7px}
+}
+@media(max-width:767px){
+ .story-dialog{width:calc(100vw - 18px);height:94dvh;max-height:94dvh;border-radius:13px}
+ .story-modal-topbar{padding:10px 17px}
+ .story-paper{justify-content:flex-start;overflow-y:auto;overscroll-behavior:contain;padding:25px 23px 28px}
+ .story-letter-title{font-size:40px}
+ .story-letter-body{font-size:18px;line-height:1.32}
+ .story-letter-body p{margin-bottom:10px}
+ .story-letter-body .story-signature{margin-top:12px}
+ #about .about-story-teaser{font-size:18px}
+}
+@media(max-width:390px){
+ .story-letter-title{font-size:36px}
+ .story-letter-body{font-size:17.5px;line-height:1.29}
+ .story-paper{padding:21px 19px 24px}
+}
+@media(prefers-reduced-motion:reduce){.story-dialog[open]{animation:none}}
+
+/* V7: longer approved Upcoming Case Study copy; original dark card + green-ring indicator retained. */
+.upcoming-card{min-height:340px;gap:clamp(22px,4vw,52px)}
+.upcoming-card > .relative.z-10:first-of-type {max-width:960px}
+.upcoming-subtitle{color:#bde1c9;font-size:11px;font-weight:600;letter-spacing:.055em;line-height:1.6;margin:0 0 19px}
+.upcoming-question{font-family:'Playfair Display',Georgia,serif;color:#fff;font-size:clamp(19px,2vw,24px);font-weight:400;line-height:1.4;max-width:780px;margin:0 0 16px}
+.upcoming-description{color:#d0d9d2;font-size:13px;line-height:1.75;font-weight:300;max-width:840px;margin:0 0 13px}
+.upcoming-description:last-child{margin-bottom:0}
+@media(max-width:767px){.upcoming-card{gap:16px}.upcoming-subtitle{font-size:10px;margin-bottom:15px}.upcoming-question{font-size:20px}.upcoming-description{font-size:12.5px}}

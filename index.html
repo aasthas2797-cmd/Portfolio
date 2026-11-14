@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html class="scroll-smooth" lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -7,7 +8,7 @@
 <!-- Tailwind CSS -->
 <!-- AOS Animation Library -->
 <!-- Google Fonts: Elegant and modern -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/><script defer="True" src="script.js"></script></head>
 <body class="selection:bg-primarySoft selection:text-primary" id="top"><nav aria-label="Main navigation" class="site-nav glass-nav" id="site-nav">
 <div class="nav-shell">
@@ -29,13 +30,12 @@
 <!-- Fixed Hero Section -->
 <div class="hero-fixed">
 <div class="hero-graphic hero-g1"></div>
-<div class="hero-graphic hero-g2"></div>
+<div class="hero-graphic hero-g2"></div><div aria-hidden="true" class="hero-environmental-art"></div>
 <!-- Navbar -->
 <div class="px-6 md:px-16 w-full max-w-5xl mx-auto z-10 text-center" data-aos="fade-up" data-aos-duration="1200">
 <div class="inline-block px-4 py-1.5 rounded-full bg-white border border-line text-inkSoft text-xs font-semibold tracking-widest uppercase mb-8 shadow-sm text-primaryMid">CLIMATE · CIRCULARITY · BUSINESS</div>
 <h1 class="text-5xl md:text-7xl font-serif text-ink leading-[1.1] mb-8">The details matter. <span class="italic text-primaryMid">So does the bigger picture.</span></h1>
 <p class="text-lg md:text-xl text-inkSoft font-light max-w-3xl mx-auto leading-relaxed">From climate risk to resource management, I explore how individual decisions connect to wider business challenges, and why context matters as much as the numbers.</p>
-
 </div>
 <div class="animate-bounce text-inkMuted hero-scroll-cue">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
@@ -45,7 +45,7 @@
 <!-- Areas of Focus (Flipping Cards) -->
 <section class="px-6 md:px-16 pt-24 pb-20 max-w-[90rem] mx-auto bg-bgAlt rounded-[3rem] mt-10 mx-4" id="focus">
 <div class="text-center mb-16" data-aos="fade-up">
-<h2 class="font-serif text-4xl md:text-5xl text-ink mb-4">Areas of Focus.</h2>
+<h2 class="font-serif text-4xl md:text-5xl text-ink mb-4">Areas of Focus</h2>
 <p class="text-inkSoft max-w-2xl mx-auto text-sm leading-relaxed">Three fields, three different questions. Hover or tap to explore my perspective.</p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -54,19 +54,17 @@
 <div class="flip-card-inner">
 <!-- Front -->
 <div class="flip-card-front">
-<div class="w-12 h-12 rounded-xl bg-primarySoft flex items-center justify-center mb-8">
-<svg class="w-6 h-6 text-primaryMid" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 16V9M8 16V5M12 16v-6M16 16V7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<div class="w-12 h-12 rounded-xl bg-primarySoft flex items-center justify-center mb-8 focus-icon-tile">
+<svg class="w-6 h-6 focus-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 16V9M8 16V5M12 16v-6M16 16V7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
 </div>
 <h3 class="font-serif text-2xl text-ink mb-4">Climate Strategy &amp; Risk</h3>
-<p class="text-inkSoft text-sm leading-relaxed font-light">Exploring how climate risks shape business decisions, what the evidence shows, what remains uncertain and which trade-offs matter.</p>
-<div class="mt-auto text-xs font-semibold text-primaryMid flex items-center uppercase tracking-widest">
-                                My Perspective <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7-7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<h4 class="flip-hook font-serif">Knowing the risk is only half the answer.</h4><p class="text-inkSoft text-sm leading-relaxed font-light">What interests me is the harder question: what should a business actually do when every response involves a trade-off?</p>
+<div class="mt-auto font-semibold flex items-center uppercase tracking-widest focus-cta">
+                                My Perspective <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 </div>
 <!-- Back (Personal Story) -->
-<div class="flip-card-back">
-<p class="text-sm text-primarySoft leading-relaxed font-light">Two businesses can face the same climate risk and arrive at different decisions. That raises questions worth exploring: What are they measuring? Which assumptions are they relying on? How do cost, timing and uncertainty influence their choices?<br/><br/>For me, a conclusion is only useful if the reasoning holds up and the proposed response can actually work.</p>
-</div>
+<div class="flip-card-back"><div class="flip-back-copy"><p>When I began studying sustainability, I was drawn to the frameworks and commitments. But the more I explored them, the more interested I became in the decisions that follow.</p><p>Consider a business exposed to flooding. Relocating may reduce physical risk but increase costs and disrupt suppliers. Staying may protect short-term operations while leaving the business vulnerable.</p><p>Neither answer is automatically right. That's what draws me to climate strategy: understanding the exposure, challenging the assumptions and finding a response the business can justify and deliver.</p></div></div>
 </div>
 </div>
 <!-- Card 2: Circular Economy -->
@@ -74,19 +72,17 @@
 <div class="flip-card-inner">
 <!-- Front -->
 <div class="flip-card-front">
-<div class="w-12 h-12 rounded-xl bg-[#fbefdc] flex items-center justify-center mb-8">
-<svg class="w-6 h-6 text-[#a8681c]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15.5 8A6 6 0 0 0 4.7 6.3M4.5 12a6 6 0 0 0 10.8 1.7M4 3v3.5h3.5M16 17v-3.5h-3.5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<div class="w-12 h-12 rounded-xl flex items-center justify-center mb-8 focus-icon-tile">
+<svg class="w-6 h-6 focus-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15.5 8A6 6 0 0 0 4.7 6.3M4.5 12a6 6 0 0 0 10.8 1.7M4 3v3.5h3.5M16 17v-3.5h-3.5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
 </div>
 <h3 class="font-serif text-2xl text-ink mb-4">Circular Economy</h3>
-<p class="text-inkSoft text-sm leading-relaxed font-light"><strong class="circle-hook">How far can a resource go before it becomes waste?</strong><span class="circle-support">Exploring how design, reuse and business decisions can extend the life of materials and preserve their value.</span></p>
-<div class="mt-auto text-xs font-semibold text-[#a8681c] flex items-center uppercase tracking-widest">
-                                My Perspective <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7-7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<h4 class="flip-hook font-serif">Waste rarely begins where we notice it.</h4><p class="text-inkSoft text-sm leading-relaxed font-light">The question that has stayed with me is simple: why was that resource wasted in the first place?</p>
+<div class="mt-auto font-semibold flex items-center uppercase tracking-widest focus-cta">
+                                My Perspective <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 </div>
 <!-- Back (Personal Story) -->
-<div class="flip-card-back">
-<p class="text-sm text-primarySoft leading-relaxed font-light">I've always paid attention to waste that feels unnecessary: materials discarded too soon, energy used without much thought or resources consumed without a clear reason.<br/><br/>But recognising waste is the easy part. The more useful questions are why it happens, whether it could have been avoided, and what a better alternative would require. Sometimes the answer lies in design, behaviour, or the economics of how a business operates.</p>
-</div>
+<div class="flip-card-back"><div class="flip-back-copy"><p>Long before sustainability became a career interest, I was conscious of things that seemed unnecessarily wasted: electricity, water, plastic, or something thrown away when it could still be useful.</p><p>Working in operations gave that instinct a different perspective. By the time excess products become waste, the decisions responsible may have been made hours earlier through forecasting, purchasing or production planning.</p><p>That changed the question for me. Rather than only asking how waste can be managed, I became interested in how it could have been prevented, and whether doing so could make better business sense too.</p></div></div>
 </div>
 </div>
 <!-- Card 3: Sustainable Business -->
@@ -94,19 +90,17 @@
 <div class="flip-card-inner">
 <!-- Front -->
 <div class="flip-card-front">
-<div class="w-12 h-12 rounded-xl bg-[#e5e8f6] flex items-center justify-center mb-8">
-<svg class="w-6 h-6 text-[#3e4f99]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 3l7 4-7 4-7-4 7-4zm-7 7.5l7 4 7-4m-14 3.5l7 4 7-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<div class="w-12 h-12 rounded-xl flex items-center justify-center mb-8 focus-icon-tile">
+<svg class="w-6 h-6 focus-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 3l7 4-7 4-7-4 7-4zm-7 7.5l7 4 7-4m-14 3.5l7 4 7-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
 </div>
 <h3 class="font-serif text-2xl text-ink mb-4">Business Analysis &amp; Operations</h3>
-<p class="text-inkSoft text-sm leading-relaxed font-light">A waste figure, a supplier quote or a missed deadline rarely tells the whole story. Understanding what’s driving the result, weighing the options and deciding what to do next.</p>
-<div class="mt-auto text-xs font-semibold text-[#3e4f99] flex items-center uppercase tracking-widest">
-                                My Perspective <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7-7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<h4 class="flip-hook font-serif">A good answer on paper can still fail in practice.</h4><p class="text-inkSoft text-sm leading-relaxed font-light">Working in operations changed how I judge a solution. Being analytically correct isn't quite enough.</p>
+<div class="mt-auto font-semibold flex items-center uppercase tracking-widest focus-cta">
+                                My Perspective <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </div>
 </div>
 <!-- Back (Personal Story) -->
-<div class="flip-card-back">
-<p class="text-sm text-primarySoft leading-relaxed font-light">Working in operations has taught me that even a sensible plan can fall apart when priorities compete, resources are limited, or circumstances change.<br/><br/>It has also shaped how I approach a problem. Before recommending a solution, I want to understand what's causing it, question the assumptions and compare the alternatives. Then comes the practical test: Who needs to make it work? What could get in the way? And how will we know if it succeeded?</p>
-</div>
+<div class="flip-card-back"><div class="flip-back-copy"><p>I've seen how a perfectly reasonable plan can run into competing priorities, unexpected demand and limited resources. In those moments, the most useful person isn't necessarily the one with the most elaborate analysis. It's the one who can work out what matters, what can change and what needs to happen next.</p><p>That experience influences how I approach my independent projects too. I don't want to stop at identifying a problem. I want to understand its consequences, compare possible responses and test whether the recommendation still makes sense when the assumptions change.</p></div></div>
 </div>
 </div>
 </div>
@@ -125,7 +119,7 @@
 <div class="project-mini-stat"><strong>70 t</strong><span>Refined palm oil<br/>assessed</span></div>
 <div class="project-mini-stat"><strong>91.7%</strong><span>Evidence records<br/>available</span></div>
 </div>
-<a class="project-read inline-flex items-center text-sm font-semibold text-primary hover:text-primaryMid transition" href="eudr-case-study.html">Explore Case Study <svg aria-hidden="true" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7-7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+<a class="project-read inline-flex items-center text-sm font-semibold text-primary hover:text-primaryMid transition" href="eudr-case-study.html">Explore Case Study <svg aria-hidden="true" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
 </div>
 <div class="project-feature-media md:w-[55%] relative min-h-[300px] md:min-h-full">
 <img alt="Aerial landscape with a winding road through cultivated land in Indonesia; image by Tom Fisk" loading="lazy" onerror="this.onerror=null;this.src='assets/figure_02_supply_routes.png';this.classList.add('image-fallback')" src="https://images.pexels.com/photos/1726622/pexels-photo-1726622.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"/>
@@ -138,8 +132,11 @@
 <div aria-hidden="true" class="absolute inset-0 bg-primaryMid h-full opacity-10"></div>
 <div class="relative z-10 md:w-2/3 mb-6 md:mb-0 text-center md:text-left">
 <div class="inline-block px-3 py-1 bg-white/10 text-white/80 border border-white/20 text-[10px] font-semibold uppercase tracking-widest rounded-full mb-4">UP NEXT / 02</div>
-<h3 class="font-serif text-2xl md:text-3xl text-white mb-2">Upcoming Case Study</h3>
-<p class="text-gray-400 text-sm leading-relaxed font-light">A new independent project exploring how resource use, business constraints and everyday decisions create opportunities for improvement.</p>
+<h3 class="font-serif text-2xl md:text-3xl text-white mb-3">The Hidden Cost of Circularity</h3>
+<p class="upcoming-subtitle">Circular Economy · Business Strategy · Commercial Analysis</p>
+<h4 class="upcoming-question">When sustainability makes business sense in theory, what stops it from working in practice?</h4>
+<p class="upcoming-description">An upcoming case study exploring a difficult question in the transition to circular business models: how should companies choose between reducing material use, increasing recycled content and introducing reuse systems when each option carries different environmental, financial and operational trade-offs?</p>
+<p class="upcoming-description">Through comparative scenario analysis, I will examine where circular solutions create genuine value, where their limitations emerge and what makes a transition commercially and environmentally defensible.</p>
 </div>
 <div class="relative z-10 flex items-center justify-center"><span class="upcoming-indicator"><span class="w-2 h-2 rounded-full bg-primaryBright mr-3"></span>Coming Soon</span></div>
 </article>
@@ -244,7 +241,7 @@
 <div class="lg:col-span-3 experience-rail"><div class="experience-rail-inner">
 <div class="inline-block px-3 py-1 bg-white border border-line text-inkSoft text-xs font-semibold uppercase tracking-widest rounded-full mb-8">CAREER TIMELINE</div>
 <h2 class="font-serif text-4xl md:text-5xl text-ink mb-6 leading-tight">Experience</h2>
-<p class="text-inkSoft font-light leading-relaxed">Experience across operations, project delivery, procurement and business analysis with a focus on solving problems, improving processes and delivering measurable results.</p>
+<p class="text-inkSoft font-light leading-relaxed">Experience across operations, project delivery, procurement and business analysis, with a focus on solving problems, improving processes and delivering measurable results.</p>
 </div></div>
 <div class="lg:col-span-9 relative pl-8 border-l border-line space-y-12 experience-history">
 <article class="relative experience-role"><div class="timeline-node"></div><span class="date-range">Mar 2024 – Aug 2026</span><h3>Operations / Shift Manager</h3><p class="experience-company">Greggs plc · UK</p>
@@ -267,12 +264,11 @@
 </section>
 <!-- Credentials, Education & Skills -->
 <section class="credentials-section px-6 md:px-16 py-24 max-w-[90rem] mx-auto border-t border-line" id="credentials">
-<div class="section-eyebrow" data-aos="fade-up">CREDENTIALS / TOOLKIT</div>
 <div class="credentials-top-grid">
 <article class="credential-panel" data-aos="fade-up"><h3 class="panel-title">Education</h3>
 <div class="credential-entry"><h4>MSc International Business <span class="merit">(Merit)</span></h4><p class="credential-sub">Aston University · Birmingham · 2024</p>
 <p class="credential-detail"><strong>Modules:</strong> Sustainability in Business, Corporate Governance, Corporate Social Responsibility, International Business Strategy, Entrepreneurship.</p>
-<p class="credential-detail"><strong>Dissertation:</strong> Sustainable Palm Oil Sourcing: Corporate Governance, Supply Chain Sustainability &amp; Environmental Accountability — A qualitative case study.</p>
+<p class="credential-detail"><strong>Dissertation:</strong> Sustainable Palm Oil Sourcing: Corporate Governance, Supply Chain Sustainability &amp; Environmental Accountability (qualitative case study).</p>
 </div>
 <div class="credential-entry no-border"><h4>Bachelor of Commerce</h4><p class="credential-sub">University of Delhi · 2018</p></div>
 </article>
@@ -287,7 +283,7 @@
 </article>
 </div>
 <div class="skills-panel" data-aos="fade-up">
-<div class="skills-heading"><div><h3 class="panel-title">Skills &amp; Tools</h3></div></div>
+<div class="skills-heading"><div><div class="panel-kicker">PRACTICAL CAPABILITIES</div><h3 class="panel-title">Skills &amp; Tools</h3></div></div>
 <div class="skills-columns">
 <div class="skills-column"><h4>Data &amp; Analytics</h4><div class="skill-entry"><strong>Data Modelling &amp; Quality</strong><p>Data cleaning, transformation, validation and structured assessment models</p></div><div class="skill-entry"><strong>Quantitative Analysis</strong><p>Trend, variance, correlation and scenario analysis</p></div><div class="skill-entry"><strong>Business Intelligence</strong><p>Performance measurement, KPI design and interactive dashboards</p></div><div class="skill-entry"><strong>AI-Assisted Research &amp; Analysis</strong><p>Generative AI, prompt engineering, research synthesis and workflow exploration</p></div><div class="skill-tools"><span>TOOLS</span> Excel · Power Query · Power BI · DAX · ChatGPT · Claude</div></div>
 <div class="skills-column"><h4>Business &amp; Delivery</h4><div class="skill-entry"><strong>Business Analysis</strong><p>Requirements analysis, gap assessments and options appraisal</p></div><div class="skill-entry"><strong>Commercial Evaluation</strong><p>Supplier benchmarking, procurement analysis and cost comparisons</p></div><div class="skill-entry"><strong>Project Governance</strong><p>Delivery milestones, risk registers, RACI and decision tracking</p></div><div class="skill-tools"><span>TOOLS</span> Jira · Smartsheet · Microsoft 365</div></div>
@@ -298,30 +294,25 @@
 <!-- The About Section -->
 <section class="about-section px-6 md:px-16 py-24 max-w-[90rem] mx-auto border-t border-line bg-surface" id="about">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-<div class="lg:col-span-5" data-aos="fade-right"><div class="inline-block px-3 py-1 bg-bgAlt border border-line text-inkSoft text-xs font-semibold uppercase tracking-widest rounded-full mb-8">BACKGROUND &amp; PROFESSIONAL DRIVE</div><h2 class="font-serif text-4xl md:text-5xl text-ink mb-6 leading-tight">A practical approach to complex questions.</h2><p class="text-xl text-primaryMid font-serif italic about-declaration">Different experiences. A broader perspective. A deliberate direction.</p></div>
-<div class="lg:col-span-7 space-y-6 text-inkSoft text-base md:text-lg leading-relaxed font-light about-copy" data-aos="fade-left">
-<p>There is often a considerable distance between a company's climate ambitions and what its operations can realistically deliver.</p>
-<p>The more I explore climate risk and the circular economy, the clearer one challenge becomes: understanding the frameworks is only part of the work. The harder questions concern the evidence behind decisions, the commercial constraints involved, and the systems needed to make those decisions effective. A reporting framework alone doesn't reduce waste or manage risk. What happens beyond it matters.</p>
-<p>I wanted to go further than studying regulations and their requirements. My independent projects give me the opportunity to examine how those requirements translate into real business questions, test assumptions, analyse evidence, evaluate trade-offs and develop recommendations that can be explained and defended.</p>
-<p class="font-medium text-ink about-close">I'm continuing to build that depth of expertise with a clear ambition: to help shape business and sustainability strategy through sound analysis and commercial judgement, and take responsibility for turning decisions into results.</p>
-</div>
+<div class="lg:col-span-5" data-aos="fade-right"><div class="inline-block px-3 py-1 bg-bgAlt border border-line text-inkSoft text-xs font-semibold uppercase tracking-widest rounded-full mb-8">ABOUT / PROFESSIONAL DIRECTION</div><h2 class="font-serif text-4xl md:text-5xl text-ink mb-6 leading-tight">The business behind <em>the ambition.</em></h2></div>
+<div class="lg:col-span-7 space-y-6 text-inkSoft text-base md:text-lg leading-relaxed font-light about-copy" data-aos="fade-left"><p>My experience has taken me through different sides of business, from operations and supplier evaluation to project coordination and analysis. Together, they've given me an understanding of how decisions are made, how priorities compete and what influences business performance.</p><p>I'm bringing that foundation into sustainability, with a focus on climate risk and the circular economy. Through independent research and analytical projects, I'm developing my ability to connect environmental and regulatory challenges with their commercial implications and strategic choices.</p><p class="about-close">My ambition is to contribute to sustainability strategy at the point where organisations decide their priorities, allocate resources and plan for the future. I want to be involved in shaping those decisions, not only measuring progress after they've been made.</p><div class="about-story-invite"><p class="about-story-teaser">There's a more personal story behind why I chose this direction.</p><button aria-controls="story-dialog" aria-haspopup="dialog" aria-label="Read my personal story in a letter" class="story-trigger" id="open-story" type="button">Read My Story <span aria-hidden="true">↗</span></button></div></div>
 </div>
 </section>
 <!-- Contact: approved editorial closing section -->
-<section class="contact-section px-6 md:px-16 max-w-[90rem] mx-auto bg-bgAlt rounded-[3rem]" id="contact" aria-labelledby="contact-heading">
-  <div class="contact-inner" data-aos="fade-up">
-    <div class="contact-eyebrow">CONTACT</div>
-    <h2 class="font-serif contact-heading" id="contact-heading">Good conversations <em>start somewhere.</em></h2>
-    <p class="contact-description">Whether it's an opportunity, an idea or a question about my work, I'd welcome a conversation.</p>
-    <div class="contact-links">
-      <a href="mailto:aasthas2797@gmail.com" aria-label="Email Aastha Sharma">Email <span aria-hidden="true">↗</span></a>
-      <a href="https://www.linkedin.com/in/aasthasharma97" target="_blank" rel="noopener noreferrer" aria-label="Connect with Aastha Sharma on LinkedIn">LinkedIn <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
+<section aria-labelledby="contact-heading" class="contact-section px-6 md:px-16 max-w-[90rem] mx-auto bg-bgAlt rounded-[3rem]" id="contact">
+<div class="contact-inner" data-aos="fade-up">
+<div class="contact-eyebrow">CONTACT</div>
+<h2 class="font-serif contact-heading" id="contact-heading">Good conversations <em>start somewhere.</em></h2>
+<p class="contact-description">Whether it's an opportunity, an idea or a question about my work, I'd welcome a conversation.</p>
+<div class="contact-links">
+<a aria-label="Email Aastha Sharma" href="mailto:aasthas2797@gmail.com">Email <span aria-hidden="true">↗</span></a>
+<a aria-label="Connect with Aastha Sharma on LinkedIn" href="https://www.linkedin.com/in/aasthasharma97" rel="noopener noreferrer" target="_blank">LinkedIn <span aria-hidden="true">↗</span></a>
+</div>
+</div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="site-footer bg-surface text-inkSoft py-10 px-6 md:px-16 border-t border-line relative z-20 text-xs font-medium"><div class="max-w-[90rem] mx-auto flex flex-col md:flex-row justify-between items-center gap-4"><div class="font-serif text-ink text-sm">Aastha Sharma <span class="text-inkSoft font-sans font-normal ml-2">© 2026</span></div><div class="flex footer-links"><a href="#top" class="footer-back-to-top">Back to Top <span aria-hidden="true">↑</span></a></div></div></footer>
+<dialog aria-labelledby="story-title" class="story-dialog" id="story-dialog"><div class="story-modal-frame"><div class="story-modal-topbar"><button aria-label="Close personal letter" class="story-close" type="button">Close  ×</button></div><div class="story-paper"><h2 class="story-letter-title" id="story-title">My Story</h2><div aria-hidden="true" class="story-gold-rule"></div><div class="story-letter-body"><p>I didn't always know I wanted to work in sustainability.</p><p>But I've always been conscious of the little things. Wasting electricity, using more water than necessary, throwing away something that could still be useful. And I'd often find myself encouraging people around me to think about these things too.</p><p>For a long time, I couldn't quite connect that interest to a career. Then came my master's.</p><p>Through the modules I studied, the projects I worked on and the ideas I presented, I began seeing a much bigger picture. What started as everyday awareness turned into questions I genuinely wanted answers to.</p><p class="story-quote">Why are things done this way? How do we change them? And what would it take to do things better?</p><p>The more I learned, the more curious I became. And I haven't stopped since.</p><p>Finding my way into this field hasn't been a straight road, but that hasn't made me want it any less.</p><p>I want to help shape business strategies, influence better environmental decisions and encourage people to be more conscious of their choices.</p><p>I didn't have it all figured out from the beginning. I still don't.</p><p class="story-final-line">But I know this is a field I want to make my own.</p><p class="story-signature">Aastha</p></div></div></div></dialog><footer class="site-footer bg-surface text-inkSoft py-10 px-6 md:px-16 border-t border-line relative z-20 text-xs font-medium"><div class="max-w-[90rem] mx-auto flex flex-col md:flex-row justify-between items-center gap-4"><div class="font-serif text-ink text-sm">Aastha Sharma <span class="text-inkSoft font-sans font-normal ml-2">© 2026</span></div><div class="flex footer-links"><a class="footer-back-to-top" href="#top">Back to Top <span aria-hidden="true">↑</span></a></div></div></footer>
 <!-- Initialize Animation on Scroll -->
 <div aria-live="polite" class="site-toast" id="site-toast" role="status"></div></body>
 </html>

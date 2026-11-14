@@ -42,4 +42,23 @@
     dialog.querySelector('.figure-close')?.addEventListener('click',()=>dialog.close());
     dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
   }
+
+  // Full-screen, keyboard-accessible personal letter (Escape and backdrop to close).
+  const storyDialog=document.getElementById('story-dialog');
+  const storyTrigger=document.getElementById('open-story');
+  if(storyDialog && storyTrigger){
+    const closeStory=()=>storyDialog.close();
+    storyTrigger.addEventListener('click',()=>{
+      storyDialog.showModal();
+      document.body.classList.add('story-modal-open');
+      storyDialog.querySelector('.story-close')?.focus({preventScroll:true});
+    });
+    storyDialog.querySelector('.story-close')?.addEventListener('click',closeStory);
+    storyDialog.addEventListener('click',e=>{if(e.target===storyDialog)closeStory()});
+    storyDialog.addEventListener('close',()=>{
+      document.body.classList.remove('story-modal-open');
+      storyTrigger.focus({preventScroll:true});
+    });
+  }
+
 })();
