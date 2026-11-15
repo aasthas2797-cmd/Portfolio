@@ -1,0 +1,23 @@
+{
+  "name": "aastha-sharma-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Aastha Sharma - Climate, Circularity, and Business",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "portfolio",
+    "climate",
+    "sustainability",
+    "circular-economy"
+  ],
+  "author": "Aastha Sharma",
+  "license": "MIT"
+}
